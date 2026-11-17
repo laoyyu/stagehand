@@ -1,5 +1,11 @@
 # browse
 
+## 0.11.5
+
+### Patch Changes
+
+- [#3473](https://github.com/browserbase/stagehand/pull/3473) [`0f9a64c`](https://github.com/browserbase/stagehand/commit/0f9a64c141d929b0595b4d909d89fb02e37c1ca4) Thanks [@github-actions](https://github.com/apps/github-actions)! - fix the CLI printing replacement characters when a daemon reply splits a multi-byte character across socket chunks
+
 ## 0.11.4
 
 ### Patch Changes
