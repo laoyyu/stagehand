@@ -3,6 +3,65 @@
 This changelog covers the public Stagehand TypeScript and Python SDKs. Entries before 4.0.0
 describe the TypeScript SDK.
 
+## TypeScript SDK 4.5.0
+
+### Minor Changes
+
+- [#3386](https://github.com/browserbase/stagehand/pull/3386) [`82827a2`](https://github.com/browserbase/stagehand/commit/82827a219512f0399cb159720a63f7d271d21480) Thanks [@ziruihao](https://github.com/ziruihao)! - Add `page.onResponse()` in TypeScript and `page.on_response()` in Python to observe network responses from a page and its child frames. Callbacks receive SDK Response objects when headers arrive, with lazy body retrieval and subscription handles for stopping callbacks.
+
+### Patch Changes
+
+- [#3454](https://github.com/browserbase/stagehand/pull/3454) [`a94afd6`](https://github.com/browserbase/stagehand/commit/a94afd67031968c0f449258e3e6bf6c98ceb26c9) Thanks [@seanmcguire12](https://github.com/seanmcguire12)! - Fix network tracking missing requests made immediately by newly attached cross-origin iframes.
+
+- [#3437](https://github.com/browserbase/stagehand/pull/3437) [`b290165`](https://github.com/browserbase/stagehand/commit/b29016565dc83dc4f0e56948fb11210dce7e4df0) Thanks [@github-actions](https://github.com/apps/github-actions)! - fix response header lookups reporting a header with an empty value as missing on HTTP/2 responses
+
+- [#3468](https://github.com/browserbase/stagehand/pull/3468) [`9d3cfa5`](https://github.com/browserbase/stagehand/commit/9d3cfa51589ab1fdc85e16ddfc09f8c44dc7e2b9) Thanks [@github-actions](https://github.com/apps/github-actions)! - Respect host-only cookie domains when filtering context cookies by URL, while continuing to match subdomains for cookies with a leading-dot domain.
+
+## Python SDK 4.5.0
+
+### Minor Changes
+
+- [#3386](https://github.com/browserbase/stagehand/pull/3386) [`82827a2`](https://github.com/browserbase/stagehand/commit/82827a219512f0399cb159720a63f7d271d21480) Thanks [@ziruihao](https://github.com/ziruihao)! - Add `page.onResponse()` in TypeScript and `page.on_response()` in Python to observe network responses from a page and its child frames. Callbacks receive SDK Response objects when headers arrive, with lazy body retrieval and subscription handles for stopping callbacks.
+
+### Patch Changes
+
+- [#3454](https://github.com/browserbase/stagehand/pull/3454) [`a94afd6`](https://github.com/browserbase/stagehand/commit/a94afd67031968c0f449258e3e6bf6c98ceb26c9) Thanks [@seanmcguire12](https://github.com/seanmcguire12)! - Fix network tracking missing requests made immediately by newly attached cross-origin iframes.
+
+- [#3437](https://github.com/browserbase/stagehand/pull/3437) [`b290165`](https://github.com/browserbase/stagehand/commit/b29016565dc83dc4f0e56948fb11210dce7e4df0) Thanks [@github-actions](https://github.com/apps/github-actions)! - fix response header lookups reporting a header with an empty value as missing on HTTP/2 responses
+
+- [#3468](https://github.com/browserbase/stagehand/pull/3468) [`9d3cfa5`](https://github.com/browserbase/stagehand/commit/9d3cfa51589ab1fdc85e16ddfc09f8c44dc7e2b9) Thanks [@github-actions](https://github.com/apps/github-actions)! - Respect host-only cookie domains when filtering context cookies by URL, while continuing to match subdomains for cookies with a leading-dot domain.
+
+## Extension Runtime 1.4.0
+
+### Minor Changes
+
+- [#3386](https://github.com/browserbase/stagehand/pull/3386) [`82827a2`](https://github.com/browserbase/stagehand/commit/82827a219512f0399cb159720a63f7d271d21480) Thanks [@ziruihao](https://github.com/ziruihao)! - Add `page.onResponse()` in TypeScript and `page.on_response()` in Python to observe network responses from a page and its child frames. Callbacks receive SDK Response objects when headers arrive, with lazy body retrieval and subscription handles for stopping callbacks.
+
+### Patch Changes
+
+- [#3454](https://github.com/browserbase/stagehand/pull/3454) [`a94afd6`](https://github.com/browserbase/stagehand/commit/a94afd67031968c0f449258e3e6bf6c98ceb26c9) Thanks [@seanmcguire12](https://github.com/seanmcguire12)! - Fix network tracking missing requests made immediately by newly attached cross-origin iframes.
+
+- [#3437](https://github.com/browserbase/stagehand/pull/3437) [`b290165`](https://github.com/browserbase/stagehand/commit/b29016565dc83dc4f0e56948fb11210dce7e4df0) Thanks [@github-actions](https://github.com/apps/github-actions)! - fix response header lookups reporting a header with an empty value as missing on HTTP/2 responses
+
+- [#3468](https://github.com/browserbase/stagehand/pull/3468) [`9d3cfa5`](https://github.com/browserbase/stagehand/commit/9d3cfa51589ab1fdc85e16ddfc09f8c44dc7e2b9) Thanks [@github-actions](https://github.com/apps/github-actions)! - Respect host-only cookie domains when filtering context cookies by URL, while continuing to match subdomains for cookies with a leading-dot domain.
+
+## Protocol 3.2.0
+
+### Minor Changes
+
+- [#3386](https://github.com/browserbase/stagehand/pull/3386) [`82827a2`](https://github.com/browserbase/stagehand/commit/82827a219512f0399cb159720a63f7d271d21480) Thanks [@ziruihao](https://github.com/ziruihao)! - Add `page.onResponse()` in TypeScript and `page.on_response()` in Python to observe network responses from a page and its child frames. Callbacks receive SDK Response objects when headers arrive, with lazy body retrieval and subscription handles for stopping callbacks.
+
+## Eve Extension 0.3.0
+
+### Minor Changes
+
+- [#3409](https://github.com/browserbase/stagehand/pull/3409) [`03c00e6`](https://github.com/browserbase/stagehand/commit/03c00e622cf39ee90f48a2c8e30b359369f0b01d) Thanks [@shrey150](https://github.com/shrey150)! - Add support for Eve 1.x and drop support for Eve 0.71.x.
+
+### Patch Changes
+
+- Updated dependencies [[`a94afd6`](https://github.com/browserbase/stagehand/commit/a94afd67031968c0f449258e3e6bf6c98ceb26c9), [`b290165`](https://github.com/browserbase/stagehand/commit/b29016565dc83dc4f0e56948fb11210dce7e4df0), [`9d3cfa5`](https://github.com/browserbase/stagehand/commit/9d3cfa51589ab1fdc85e16ddfc09f8c44dc7e2b9), [`82827a2`](https://github.com/browserbase/stagehand/commit/82827a219512f0399cb159720a63f7d271d21480)]:
+  - @browserbasehq/stagehand@4.5.0
+
 ## TypeScript SDK 4.4.0
 
 ### Minor Changes
